@@ -16,3 +16,20 @@ pead-options-backtester/
 ├── data_pipeline.py    # Core async API client, DB storage, & quant math functions
 ├── requirements.txt    # Python dependencies
 └── README.md           # Documentation
+
+## Setup & Execution
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Set your Polygon API Key
+export POLYGON_API_KEY="your_api_key_here"
+
+# Run the data pipeline
+python data_pipeline.py AAPL
+
+## Next Steps
+
+Integrate options chain volatility skew & implied volatility (IV) calculations.
+
+Implement event-driven backtesting execution engine for entry/exit signals.
